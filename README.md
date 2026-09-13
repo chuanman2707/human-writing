@@ -50,16 +50,22 @@ Hệ thống được tổ chức thành các thành phần chuyên biệt, vậ
 
 ```
 Facebook-Content/
-├── AGENTS.md                                     # Quy tắc điều phối không gian làm việc (Workspace Rules)
+├── AGENTS.md                                     # Quy tắc điều phối cho Antigravity / Agent Studio
+├── CLAUDE.md                                     # Quy tắc chỉ dẫn dự án cho Anthropic Claude Code
 ├── README.md                                     # Tài liệu hướng dẫn sử dụng & quy chuẩn vận hành
-└── .agents/
+├── .gitignore                                    # Cấu hình bỏ qua tài liệu nội bộ (docs/) & file rác
+├── .claude/                                      # Chuẩn Kỹ năng cho Anthropic Claude Code
+│   └── skills/
+│       ├── fb-tech-writer/                       # Kỹ năng viết bài Tech Facebook chuyên sâu
+│       │   ├── SKILL.md                          # Persona, Công thức 5 phần, Vietnamese Anti-Slop
+│       │   └── references/examples.md            # Kho 6 bài mẫu thực tế kèm giải phẫu (Few-shot)
+│       └── humanizer/                            # Bộ lọc khử văn phong AI (blader/humanizer)
+│           ├── SKILL.md                          # 21 quy tắc loại bỏ thói quen hành văn chatbot
+│           └── README.md
+└── .agents/                                      # Chuẩn Kỹ năng cho Antigravity Workspace
     └── skills/
-        ├── fb-tech-writer/                       # Kỹ năng viết bài Tech Facebook chuyên sâu
-        │   ├── SKILL.md                          # Persona, Công thức 5 phần, Vietnamese Anti-Slop, Edge Cases
-        │   └── references/
-        │       └── examples.md                   # Kho 6 bài mẫu thực tế kèm giải phẫu chi tiết (Few-shot Corpus)
-        └── humanizer/                            # Bộ lọc khử văn phong AI (blader/humanizer)
-            └── SKILL.md                          # 21 quy tắc loại bỏ thói quen hành văn chatbot
+        ├── fb-tech-writer/
+        └── humanizer/
 ```
 
 ### Chi Tiết Từng Thành Phần:

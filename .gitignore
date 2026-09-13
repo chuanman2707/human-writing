@@ -1,0 +1,12 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# Documentation and internal planning
+docs/
+
+# Environment and local configs
+.env
+*.local
